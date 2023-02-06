@@ -1,17 +1,18 @@
 import React from 'react';
 import Navbar from '../componements/Navbar';
 import Footer from '../componements/Footer';
-import Signupform from '../componements/forms/Forminscription';
+import Loginform from '../componements/forms/Formlogin';
 
-const Inscription = () => {
+
+const login = () => {
     return (
         <div className='container-fluid justify-center'>
             <Navbar />
-            <p>inscription</p>
-            <Signupform />
+            <p>connexion</p>
+            <Loginform />
             <Footer />
         </div>
     );
 };
 
-export default Inscription;
+export default login;

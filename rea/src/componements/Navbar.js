@@ -3,23 +3,31 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-            <nav className='container-fluid  flex mx-auto justify-between border-2 border-black '>
-                <div className=' w-25' >
-                    <img  className='w-1/2' src="./assets/img/main.jpg" alt="logo" />
-                </div>
-                    <ul className='w-50'>
-                        
-                        <NavLink to="/"><li>Acceuil</li></NavLink>
-                        <NavLink to="/About"><li>About</li></NavLink>
+        <nav className='container-fluid bg-gray-900 text-white py-12 flex mx-auto justify-between border-2 border-black'>
+            <div className='' >
+                <img className='' src="./assets/img/main.jpg" alt="logo" />
+            </div>
+            <ul className='w-50'>
 
-                    </ul>
-                <div className="w-25" >
-                    <div className="btn">inscription </div>
-                    <div className="btn">connexion </div>
-                    <div className="btn">deconnexion </div>
+                <li><NavLink to="/">Acceuil</NavLink></li>
+                <li><NavLink to="/About">About</NavLink></li>
+
+            </ul>
+            <div className="w-25" >
+                <div className="bg-blue-500 hover:bg-blue-700">
+                    <NavLink to="/Inscription">Inscription</NavLink>
                 </div>
-            </nav>
-        
+
+                <div className="bg-blue-500 hover:bg-blue-700">
+                    <NavLink to="/Connexion" >login </NavLink>
+                </div>
+
+                <div className="btn">
+                    deconnexion
+                </div>
+            </div>
+        </nav>
+
     );
 };
 

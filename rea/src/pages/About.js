@@ -1,16 +1,16 @@
 import React from 'react';
-import Main from '../componements/Main';
 import Navbar from '../componements/Navbar';
+import Main from '../componements/Main';
+import Footer from '../componements/Footer';
 
 const About = () => {
     return (
-        <div>
-            <div>
+        <div className='container-fluid justify-center'>
                 <Navbar />
+                <p>About</p>
                 <Main />
-                <p>abouts</p>
+                <Footer />
             </div>
-        </div>
     );
 };
 
